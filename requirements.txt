@@ -1,0 +1,11 @@
+arxiv
+mkdocs
+mkdocs-material
+mkdocs-awesome-pages-plugin
+python-dotenv
+langchain
+langchain_community
+langchain_openai
+zhipuai
+schedule
+httpx[socks]

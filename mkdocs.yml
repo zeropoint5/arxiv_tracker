@@ -1,0 +1,62 @@
+site_name: ArXiv Tracker
+theme:
+  name: material
+  features:
+  - navigation.tabs
+  - search.suggest
+  - search.highlight
+  navigation_depth: 0
+  toc_depth: 0
+  language: zh
+  palette:
+  - scheme: default
+    toggle:
+      icon: material/toggle-switch-off-outline
+      name: Switch to dark mode
+    primary: teal
+    accent: purple
+  - scheme: slate
+    toggle:
+      icon: material/toggle-switch
+      name: Switch to light mode
+    primary: teal
+    accent: lime
+markdown_extensions:
+- toc:
+    permalink: false
+    toc_depth: 0
+extra:
+  generator: false
+nav:
+- Home: index.md
+- RAG:
+  - 2024-08(8): RAG/2024/08.md
+  - 2024-07(98): RAG/2024/07.md
+  - 2024-06(116): RAG/2024/06.md
+  - 2024-05(79): RAG/2024/05.md
+  - 2024-04(55): RAG/2024/04.md
+  - 2024-03(45): RAG/2024/03.md
+  - 2024-02(52): RAG/2024/02.md
+  - 2024-01(28): RAG/2024/01.md
+  - 2023-12(17): RAG/2023/12.md
+  - 2023-11(13): RAG/2023/11.md
+  - 2023-10(9): RAG/2023/10.md
+  - 2023-09(6): RAG/2023/09.md
+  - 2023-08(2): RAG/2023/08.md
+  - 2023-07(4): RAG/2023/07.md
+  - 2023-05(3): RAG/2023/05.md
+  - 2023-03(2): RAG/2023/03.md
+  - 2023-02(1): RAG/2023/02.md
+  - 2022-10(3): RAG/2022/10.md
+  - 2022-07(2): RAG/2022/07.md
+  - 2021-12(1): RAG/2021/12.md
+  - 2021-11(1): RAG/2021/11.md
+  - 2021-10(1): RAG/2021/10.md
+  - 2021-06(1): RAG/2021/06.md
+  - 2021-04(1): RAG/2021/04.md
+  - 2021-02(1): RAG/2021/02.md
+  - 2021-01(1): RAG/2021/01.md
+  - 2020-12(1): RAG/2020/12.md
+  - 2020-05(1): RAG/2020/05.md
+plugins:
+- search

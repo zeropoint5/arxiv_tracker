@@ -1,0 +1,11 @@
+DB_PATH: db/arxiv_articles.db
+
+DOMAINS:
+  RAG:
+    - "abs:rag AND cat:cs.CL"
+    - "abs:rag AND cat:cs.AI"
+    - "abs:rag AND cat:cs.IR"
+    - "abs:rag AND cat:cs.LG"
+    - "abs:rag AND cat:cs.CV"
+    - "abs:rag AND cat:cs.ET"
+    - "abs:rag AND cat:cs.DB"
