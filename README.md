@@ -1,4 +1,4 @@
-# ArXiv Tracker
+# [ArXiv Tracker](https://zeropoint5.github.io/arxiv_tracker/)
 
 ## 项目概述
 
