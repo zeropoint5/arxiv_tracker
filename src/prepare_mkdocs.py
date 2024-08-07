@@ -15,15 +15,12 @@ def generate_index():
     index_path = docs_dir / "index.md"
 
     with open(index_path, "w", encoding='utf-8') as f:
-        f.write("# ArXiv Daily Tracker\n\n")
-        f.write("欢迎来到 ArXiv Daily Tracker. 这里跟踪了一些领域的最新研究进展:\n\n")
+        f.write("# ArXiv Tracker\n\n")
+        f.write("欢迎来到 ArXiv Tracker. 这里跟踪了一些领域的最新研究进展:\n\n")
 
         for domain in sorted(docs_dir.iterdir()):
             if domain.is_dir():
                 domain_name = domain.name
-                f.write(f"## [{domain_name}]({domain_name}/)\n\n")
-                f.write("Latest updates:\n\n")
-
                 all_files = list(domain.rglob("*.md"))
 
                 def sort_key(file_path):
@@ -33,6 +30,15 @@ def generate_index():
                     return -y, -m
 
                 sorted_files = sorted(all_files, key=sort_key)[:5]
+
+                if sorted_files:
+                    latest_file = sorted_files[0]
+                    latest_rel_path = latest_file.relative_to(docs_dir)
+                    f.write(f"## [{domain_name}]({latest_rel_path.as_posix()})\n\n")
+                else:
+                    f.write(f"## {domain_name}\n\n")
+
+                f.write("Latest updates:\n\n")
 
                 for file in sorted_files:
                     rel_path = file.relative_to(docs_dir)

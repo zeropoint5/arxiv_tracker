@@ -32,6 +32,7 @@ class ArxivTracker:
     def process_keyword(self, domain, query):
         search = arxiv.Search(
             query=query,
+            max_results=100,
             sort_by=arxiv.SortCriterion.SubmittedDate
         )
 

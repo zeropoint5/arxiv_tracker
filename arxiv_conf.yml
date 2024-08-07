@@ -1,8 +1,8 @@
 DB_PATH: db/arxiv_articles.db
 
 DOMAINS:
-  RAG (Retrieval Augmented Generation):
+  Retrieval Augmented Generation:
     - "abs:retrieval AND abs:augmented AND abs:generation"
 
-  ETS (Emission Trading System):
+  Emission Trading System:
     - "abs:Emission AND abs:Trading AND abs:System"

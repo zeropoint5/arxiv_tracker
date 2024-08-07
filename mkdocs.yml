@@ -29,34 +29,166 @@ extra:
   generator: false
 nav:
 - Home: index.md
-- RAG:
-  - 2024-08(8): RAG/2024/08.md
-  - 2024-07(98): RAG/2024/07.md
-  - 2024-06(116): RAG/2024/06.md
-  - 2024-05(79): RAG/2024/05.md
-  - 2024-04(55): RAG/2024/04.md
-  - 2024-03(45): RAG/2024/03.md
-  - 2024-02(52): RAG/2024/02.md
-  - 2024-01(28): RAG/2024/01.md
-  - 2023-12(17): RAG/2023/12.md
-  - 2023-11(13): RAG/2023/11.md
-  - 2023-10(9): RAG/2023/10.md
-  - 2023-09(6): RAG/2023/09.md
-  - 2023-08(2): RAG/2023/08.md
-  - 2023-07(4): RAG/2023/07.md
-  - 2023-05(3): RAG/2023/05.md
-  - 2023-03(2): RAG/2023/03.md
-  - 2023-02(1): RAG/2023/02.md
-  - 2022-10(3): RAG/2022/10.md
-  - 2022-07(2): RAG/2022/07.md
-  - 2021-12(1): RAG/2021/12.md
-  - 2021-11(1): RAG/2021/11.md
-  - 2021-10(1): RAG/2021/10.md
-  - 2021-06(1): RAG/2021/06.md
-  - 2021-04(1): RAG/2021/04.md
-  - 2021-02(1): RAG/2021/02.md
-  - 2021-01(1): RAG/2021/01.md
-  - 2020-12(1): RAG/2020/12.md
-  - 2020-05(1): RAG/2020/05.md
+- Emission Trading System:
+  - 2024-08(2): Emission Trading System/2024/08.md
+  - 2024-07(2): Emission Trading System/2024/07.md
+  - 2024-06(1): Emission Trading System/2024/06.md
+  - 2024-05(2): Emission Trading System/2024/05.md
+  - 2024-03(4): Emission Trading System/2024/03.md
+  - 2024-02(3): Emission Trading System/2024/02.md
+  - 2024-01(3): Emission Trading System/2024/01.md
+  - 2023-12(2): Emission Trading System/2023/12.md
+  - 2023-11(1): Emission Trading System/2023/11.md
+  - 2023-10(1): Emission Trading System/2023/10.md
+  - 2023-09(3): Emission Trading System/2023/09.md
+  - 2023-08(1): Emission Trading System/2023/08.md
+  - 2023-06(3): Emission Trading System/2023/06.md
+  - 2023-05(3): Emission Trading System/2023/05.md
+  - 2023-04(1): Emission Trading System/2023/04.md
+  - 2023-03(5): Emission Trading System/2023/03.md
+  - 2023-02(1): Emission Trading System/2023/02.md
+  - 2023-01(1): Emission Trading System/2023/01.md
+  - 2022-12(1): Emission Trading System/2022/12.md
+  - 2022-11(1): Emission Trading System/2022/11.md
+  - 2022-10(2): Emission Trading System/2022/10.md
+  - 2022-07(1): Emission Trading System/2022/07.md
+  - 2022-06(2): Emission Trading System/2022/06.md
+  - 2022-05(1): Emission Trading System/2022/05.md
+  - 2022-03(2): Emission Trading System/2022/03.md
+  - 2022-02(2): Emission Trading System/2022/02.md
+  - 2022-01(2): Emission Trading System/2022/01.md
+  - 2021-12(1): Emission Trading System/2021/12.md
+  - 2021-11(3): Emission Trading System/2021/11.md
+  - 2021-10(1): Emission Trading System/2021/10.md
+  - 2021-08(1): Emission Trading System/2021/08.md
+  - 2021-07(2): Emission Trading System/2021/07.md
+  - 2021-06(1): Emission Trading System/2021/06.md
+  - 2021-05(2): Emission Trading System/2021/05.md
+  - 2021-04(2): Emission Trading System/2021/04.md
+  - 2021-03(1): Emission Trading System/2021/03.md
+  - 2021-02(2): Emission Trading System/2021/02.md
+  - 2020-12(1): Emission Trading System/2020/12.md
+  - 2020-11(2): Emission Trading System/2020/11.md
+  - 2020-10(2): Emission Trading System/2020/10.md
+  - 2020-09(1): Emission Trading System/2020/09.md
+  - 2020-08(2): Emission Trading System/2020/08.md
+  - 2020-07(1): Emission Trading System/2020/07.md
+  - 2020-05(1): Emission Trading System/2020/05.md
+  - 2020-03(1): Emission Trading System/2020/03.md
+  - 2020-01(1): Emission Trading System/2020/01.md
+  - 2019-11(1): Emission Trading System/2019/11.md
+  - 2019-08(1): Emission Trading System/2019/08.md
+  - 2019-06(1): Emission Trading System/2019/06.md
+  - 2019-05(2): Emission Trading System/2019/05.md
+  - 2018-12(2): Emission Trading System/2018/12.md
+  - 2018-10(1): Emission Trading System/2018/10.md
+  - 2018-09(1): Emission Trading System/2018/09.md
+  - 2018-08(2): Emission Trading System/2018/08.md
+  - 2018-03(2): Emission Trading System/2018/03.md
+  - 2018-02(1): Emission Trading System/2018/02.md
+  - 2017-08(2): Emission Trading System/2017/08.md
+  - 2016-09(1): Emission Trading System/2016/09.md
+  - 2016-04(1): Emission Trading System/2016/04.md
+  - 2015-12(1): Emission Trading System/2015/12.md
+  - 2015-08(1): Emission Trading System/2015/08.md
+  - 2015-02(1): Emission Trading System/2015/02.md
+  - 2014-10(1): Emission Trading System/2014/10.md
+  - 2014-01(1): Emission Trading System/2014/01.md
+  - 2013-10(1): Emission Trading System/2013/10.md
+  - 2011-10(1): Emission Trading System/2011/10.md
+  - 2011-09(1): Emission Trading System/2011/09.md
+  - 2010-04(1): Emission Trading System/2010/04.md
+  - 2000-04(1): Emission Trading System/2000/04.md
+- Retrieval Augmented Generation:
+  - 2024-08(10): Retrieval Augmented Generation/2024/08.md
+  - 2024-07(130): Retrieval Augmented Generation/2024/07.md
+  - 2024-06(158): Retrieval Augmented Generation/2024/06.md
+  - 2024-05(123): Retrieval Augmented Generation/2024/05.md
+  - 2024-04(91): Retrieval Augmented Generation/2024/04.md
+  - 2024-03(72): Retrieval Augmented Generation/2024/03.md
+  - 2024-02(89): Retrieval Augmented Generation/2024/02.md
+  - 2024-01(53): Retrieval Augmented Generation/2024/01.md
+  - 2023-12(36): Retrieval Augmented Generation/2023/12.md
+  - 2023-11(42): Retrieval Augmented Generation/2023/11.md
+  - 2023-10(53): Retrieval Augmented Generation/2023/10.md
+  - 2023-09(23): Retrieval Augmented Generation/2023/09.md
+  - 2023-08(13): Retrieval Augmented Generation/2023/08.md
+  - 2023-07(14): Retrieval Augmented Generation/2023/07.md
+  - 2023-06(15): Retrieval Augmented Generation/2023/06.md
+  - 2023-05(38): Retrieval Augmented Generation/2023/05.md
+  - 2023-04(13): Retrieval Augmented Generation/2023/04.md
+  - 2023-03(12): Retrieval Augmented Generation/2023/03.md
+  - 2023-02(12): Retrieval Augmented Generation/2023/02.md
+  - 2023-01(6): Retrieval Augmented Generation/2023/01.md
+  - 2022-12(13): Retrieval Augmented Generation/2022/12.md
+  - 2022-11(9): Retrieval Augmented Generation/2022/11.md
+  - 2022-10(20): Retrieval Augmented Generation/2022/10.md
+  - 2022-09(4): Retrieval Augmented Generation/2022/09.md
+  - 2022-08(5): Retrieval Augmented Generation/2022/08.md
+  - 2022-07(7): Retrieval Augmented Generation/2022/07.md
+  - 2022-06(5): Retrieval Augmented Generation/2022/06.md
+  - 2022-05(7): Retrieval Augmented Generation/2022/05.md
+  - 2022-04(12): Retrieval Augmented Generation/2022/04.md
+  - 2022-03(6): Retrieval Augmented Generation/2022/03.md
+  - 2022-02(5): Retrieval Augmented Generation/2022/02.md
+  - 2022-01(5): Retrieval Augmented Generation/2022/01.md
+  - 2021-12(10): Retrieval Augmented Generation/2021/12.md
+  - 2021-11(3): Retrieval Augmented Generation/2021/11.md
+  - 2021-10(5): Retrieval Augmented Generation/2021/10.md
+  - 2021-09(4): Retrieval Augmented Generation/2021/09.md
+  - 2021-08(7): Retrieval Augmented Generation/2021/08.md
+  - 2021-07(3): Retrieval Augmented Generation/2021/07.md
+  - 2021-06(12): Retrieval Augmented Generation/2021/06.md
+  - 2021-05(6): Retrieval Augmented Generation/2021/05.md
+  - 2021-04(5): Retrieval Augmented Generation/2021/04.md
+  - 2021-03(1): Retrieval Augmented Generation/2021/03.md
+  - 2021-02(3): Retrieval Augmented Generation/2021/02.md
+  - 2021-01(3): Retrieval Augmented Generation/2021/01.md
+  - 2020-12(1): Retrieval Augmented Generation/2020/12.md
+  - 2020-11(2): Retrieval Augmented Generation/2020/11.md
+  - 2020-10(7): Retrieval Augmented Generation/2020/10.md
+  - 2020-09(3): Retrieval Augmented Generation/2020/09.md
+  - 2020-08(3): Retrieval Augmented Generation/2020/08.md
+  - 2020-07(6): Retrieval Augmented Generation/2020/07.md
+  - 2020-06(4): Retrieval Augmented Generation/2020/06.md
+  - 2020-05(1): Retrieval Augmented Generation/2020/05.md
+  - 2020-04(6): Retrieval Augmented Generation/2020/04.md
+  - 2020-03(2): Retrieval Augmented Generation/2020/03.md
+  - 2020-02(2): Retrieval Augmented Generation/2020/02.md
+  - 2020-01(2): Retrieval Augmented Generation/2020/01.md
+  - 2019-12(3): Retrieval Augmented Generation/2019/12.md
+  - 2019-11(3): Retrieval Augmented Generation/2019/11.md
+  - 2019-10(1): Retrieval Augmented Generation/2019/10.md
+  - 2019-09(2): Retrieval Augmented Generation/2019/09.md
+  - 2019-06(2): Retrieval Augmented Generation/2019/06.md
+  - 2019-05(2): Retrieval Augmented Generation/2019/05.md
+  - 2019-04(2): Retrieval Augmented Generation/2019/04.md
+  - 2019-03(1): Retrieval Augmented Generation/2019/03.md
+  - 2019-02(2): Retrieval Augmented Generation/2019/02.md
+  - 2019-01(1): Retrieval Augmented Generation/2019/01.md
+  - 2018-12(1): Retrieval Augmented Generation/2018/12.md
+  - 2018-11(3): Retrieval Augmented Generation/2018/11.md
+  - 2018-09(1): Retrieval Augmented Generation/2018/09.md
+  - 2018-08(1): Retrieval Augmented Generation/2018/08.md
+  - 2018-04(1): Retrieval Augmented Generation/2018/04.md
+  - 2018-02(2): Retrieval Augmented Generation/2018/02.md
+  - 2018-01(1): Retrieval Augmented Generation/2018/01.md
+  - 2017-12(2): Retrieval Augmented Generation/2017/12.md
+  - 2017-11(1): Retrieval Augmented Generation/2017/11.md
+  - 2017-09(2): Retrieval Augmented Generation/2017/09.md
+  - 2017-08(1): Retrieval Augmented Generation/2017/08.md
+  - 2017-07(1): Retrieval Augmented Generation/2017/07.md
+  - 2017-04(1): Retrieval Augmented Generation/2017/04.md
+  - 2016-10(1): Retrieval Augmented Generation/2016/10.md
+  - 2016-08(1): Retrieval Augmented Generation/2016/08.md
+  - 2016-07(1): Retrieval Augmented Generation/2016/07.md
+  - 2016-05(1): Retrieval Augmented Generation/2016/05.md
+  - 2016-04(2): Retrieval Augmented Generation/2016/04.md
+  - 2016-01(1): Retrieval Augmented Generation/2016/01.md
+  - 2015-11(1): Retrieval Augmented Generation/2015/11.md
+  - 2014-11(1): Retrieval Augmented Generation/2014/11.md
+  - 2014-03(1): Retrieval Augmented Generation/2014/03.md
+  - 2012-01(1): Retrieval Augmented Generation/2012/01.md
+  - 2009-03(1): Retrieval Augmented Generation/2009/03.md
 plugins:
 - search
