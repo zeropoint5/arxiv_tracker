@@ -1,4 +1,5 @@
 import os
+import shutil
 
 
 class MarkdownGenerator:
@@ -6,6 +7,8 @@ class MarkdownGenerator:
         self.db = db
 
     def generate_all_markdowns(self, db):
+        self.clear_docs_folder()
+
         domains = db.get_all_domains()
         months = db.get_all_months()
 
@@ -31,3 +34,13 @@ class MarkdownGenerator:
                 f.write(f"作者：{article[3]}\n\n")
                 f.write(f"{article[6]}\n\n")
                 f.write("---\n\n")
+
+    def clear_docs_folder(self):
+        docs_path = "docs"
+        # 确保 docs 文件夹存在
+        if os.path.exists(docs_path):
+            # 删除 docs 文件夹及其所有内容
+            shutil.rmtree(docs_path)
+        # 重新创建空的 docs 文件夹
+        os.makedirs(docs_path)
+        print("Cleared and recreated docs folder")

@@ -1,5 +1,4 @@
 import sqlite3
-from datetime import datetime
 
 from arxiv import Result
 
@@ -13,7 +12,7 @@ class Database:
         cursor = self.conn.cursor()
         cursor.execute('''
         CREATE TABLE IF NOT EXISTS articles (
-            id TEXT PRIMARY KEY,
+            id TEXT,
             domain TEXT,
             title TEXT,
             authors TEXT,
@@ -23,22 +22,29 @@ class Database:
             url TEXT,
             primary_category TEXT,
             categories TEXT,
-            pdf_url TEXT
-            is_related INTEGER DEFAULT 1
+            pdf_url TEXT,
+            is_related INTEGER DEFAULT 1,
+            PRIMARY KEY (id, domain)
         )
         ''')
         self.conn.commit()
 
-    def article_exists(self, entry_id):
+    def article_exists(self, entry_id, domain):
         cursor = self.conn.cursor()
-        cursor.execute("SELECT 1 FROM articles WHERE id = ?", (entry_id,))
+        cursor.execute("SELECT 1 FROM articles WHERE id = ? AND domain = ?", (entry_id, domain))
         return cursor.fetchone() is not None
+
+    def get_existing_summary(self, entry_id):
+        cursor = self.conn.cursor()
+        cursor.execute("SELECT llm_summary FROM articles WHERE id = ? LIMIT 1", (entry_id,))
+        result = cursor.fetchone()
+        return result[0] if result else None
 
     def insert_article(self, article: Result, domain, llm_summary, is_related=1):
         cursor = self.conn.cursor()
         cursor.execute('''
-        INSERT INTO articles (id, domain, title, authors, published, summary, llm_summary, url, primary_category, categories, pdf_url, is_related)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        INSERT OR REPLACE INTO articles (id, domain, title, authors, published, summary, llm_summary, url, primary_category, categories, pdf_url, is_related)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         ''', (
             article.entry_id,
             domain,

@@ -37,7 +37,11 @@ class ArxivTracker:
 
         results = list(self.arxiv_client.results(search))
         for i, result in enumerate(results):
-            if not self.db.article_exists(result.entry_id):
+            if not self.db.article_exists(result.entry_id, domain):
                 print(f"Processing {i + 1}/{len(results)}: {result.title}")
-                llm_summary = self.summarizer.summarize(result.summary)
+                existing_summary = self.db.get_existing_summary(result.entry_id)
+                if existing_summary:
+                    llm_summary = existing_summary
+                else:
+                    llm_summary = self.summarizer.summarize(result.summary)
                 self.db.insert_article(result, domain, llm_summary)

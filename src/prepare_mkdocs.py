@@ -26,11 +26,11 @@ def generate_index():
 
                 all_files = list(domain.rglob("*.md"))
 
-                def sort_key(file):
-                    parts = file.relative_to(domain).parts
-                    year = int(parts[0])
-                    month = int(re.search(r'\d+', parts[1])[0])
-                    return (-year, -month)
+                def sort_key(file_path):
+                    parts = file_path.relative_to(domain).parts
+                    y = int(parts[0])
+                    m = int(re.search(r'\d+', parts[1])[0])
+                    return -y, -m
 
                 sorted_files = sorted(all_files, key=sort_key)[:5]
 
@@ -40,6 +40,7 @@ def generate_index():
                     display = f"{year}/{month}"
                     f.write(f"- [{display}]({rel_path.as_posix()})\n")
                 f.write("\n")
+
 
 def update_nav():
     docs_dir = Path("docs")
